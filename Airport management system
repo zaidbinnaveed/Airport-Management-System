@@ -491,7 +491,7 @@ int main()
 {
 	int j, k, fln, select, tn, b;
 	int com, i, count = 1, choice, select2, a[256], z;
-	char ch, psn[8], menreturn, rpass[11] = "project123" /the password to login in the admin panel/, id[30], pass[30], c,key;
+	char ch, psn[8], menreturn, rpass[11] = "project123" /*the password to login in the admin panel*/, id[30], pass[30], c,key;
 
 	printf("Welcome to Heathrow airports flight management system\n\n\n\n\nEnter 1 for Admin pannel and 2 for User terminal ");
 	scanf("%d", &z);
