@@ -1,194 +1,186 @@
-Flight Management System 
+✈️ Flight Management System
 
-Overview
+📋 Overview
 
-This Flight Management System is a comprehensive C program that provides both administrative and user interfaces for managing airport operations. The system allows administrators to manage flight records while enabling users to check flight information, book tickets, and perform self check-in procedures.
+The Flight Management System is a robust C-based application built to optimize airport operations through distinct Administrator and User interfaces. It empowers admins to manage flights and tickets while offering users real-time flight information, booking services, self check-in, and connection planning.
 
-Features
+🌟 Key Features
 
-Admin Panel
+🛠️ Administrator Panel
 
-Flight Management:
+✈️ Flight Management
 
-Add new flight records with complete details (flight number, country, timing, date)
+➕ Add new flight records (Flight No., Country, Timing, Date)
 
-Edit existing flight information
+✏️ Edit existing flight information
 
-Delete flight records
+❌ Delete flight records
 
-Search for specific flights
+🔍 Search for specific flights
 
-View all available flights
+📄 View all available flights
 
-Ticket Management:
 
-View all booked tickets
+🎫 Ticket Management
+📋 View all booked tickets
 
-Access comprehensive passenger information
+🧾 Access full passenger details
 
-User Interface
+👤 User Interface
 
-Flight Information:
+🕒 Flight Information
 
-View arrival and departure details
+🛬 View arrival and departure times
 
-Check flight schedules for multiple destinations
+🌍 Check schedules for multiple destinations
 
-Booking System:
+🧳 Booking System
 
-Book flight tickets with passenger details
+📝 Book flight tickets with passenger info
 
-Store booking information in CSV format
+💾 Store ticket data in CSV format
 
-Check-in Services:
+🛂 Self Check-in Services
 
-Self check-in using passport and ticket number
+🔐 Check in using passport and ticket number
 
-Seat allocation information
+💺 View seat allocation
 
-Connection Planning:
+🔗 Connection Planning
 
-View possible connecting flights
+🗺️ View connecting flight options
 
-Calculate total travel duration with connections
+⏱️ Calculate total travel duration with layovers
 
-Technical Implementation
+🧱 Technical Implementation
 
-Data Structures
+📦 Data Structures
 
-Flight Records: Structured storage using struct flight containing:
+🛫 Flight Records — struct flight
 
-Flight number
+Flight Number
 
-Destination country
+Destination Country
 
-Timing information
+Timing
 
-Flight date (day, month, year)
+Date (DD/MM/YYYY)
 
-Ticket System: struct ticket for passenger information:
+🎟️ Ticket System — struct ticket
 
-Ticket number
+Ticket Number
 
 Destination
 
-Passenger details (name, age)
+Passenger Name & Age
 
-Purchase date
+Purchase Date
 
-File Handling
+📂 File Handling
 
-Binary file storage for flight records (lms.bin)
+lms.bin – Binary file for flight data
 
-CSV file storage for ticket information (tickets.csv)
+tickets.csv – CSV file for ticket records
 
-Backup system for deleted records (recycle.bin)
+recycle.bin – Backup for deleted records
 
-Security Features
+🔐 Security Features
 
-Password-protected admin interface
+🛡️ Password-protected Admin login
 
-Data validation for critical inputs
+✅ Data validation for user input
 
-Secure file operations
+🧷 Safe file operations
 
-Code Structure
+🧩 Code Architecture
 
-The program follows a modular design with clearly separated functionalities:
+🧱 Core Modules
 
-Core Modules:
+✈️ Flight Operations: Add, edit, delete, search
 
-Flight operations (add, edit, delete, search)
+🎫 Ticket Management
 
-Ticket booking and management
+👨‍💼 Admin & 👥 User Interfaces
 
-User interface components
+⚙️ Utility Functions
+📂 File I/O
 
-Utility Functions:
+🔍 Input validation
 
-File I/O operations
+📜 Menu display and flow
 
-Input validation
+💾 Data Management
 
-Menu displays and navigation
+🧱 Structured storage with custom struct types
 
-Data Management:
+💡 Persistent storage in binary and text format
 
-Structured storage using custom data types
+🏗️ Development Highlights
 
-Persistent storage in binary and text formats
+✅ Full CRUD support for flight and ticket management
 
-Development Highlights
-Implemented complete CRUD operations for flight management
+🔐 Role-specific access: Admin & User
 
-Developed dual interfaces (admin/user) with appropriate access controls
+🗃️ Organized and reliable data storage
 
-Created comprehensive data storage and retrieval system
+🧭 Clear, menu-driven UI
 
-Designed intuitive user menus and navigation
+⚠️ Strong error handling mechanisms
 
-Added robust error handling for file operations
+🚀 How to Use
+👨‍✈️ Admin Access
+Launch program
 
-How to Use
+Select Admin Mode
 
-Admin Access:
+Enter password: project123 (🔒 Change before deployment)
 
-Run the program and select admin mode
+Navigate through flight & ticket management options
 
-Use password "project123" (should be changed in production)
+👤 User Access
+Choose User Mode
 
-Manage flights through the admin menu
+Select from services:
 
-User Access:
+🛬 Flight Info
 
-Select user mode from main menu
+🧾 Ticket Booking
 
-Choose from available services:
+🛂 Self Check-in
 
-Flight information
+🔗 Connection Planning
 
-Ticket booking
+🛠️ Future Enhancements
 
-Self check-in
+🔒 Security
 
-Connection planning
+🗝️ Encrypted password storage
 
-Future Enhancements
+👥 Multi-user authentication
 
-Security Improvements:
+🗃️ Database Integration
 
-Encrypted password storage
+🛢️ Replace files with SQL database
 
-User authentication system
+🧮 Use queries for efficient access
 
-Database Integration:
+🌐 Additional Features
+💳 Payment processing integration
 
-Replace file storage with proper database
+📧 Email/SMS notifications
 
-Implement SQL queries for data management
+📱 Mobile-friendly UI
 
-Additional Features:
+🧹 Code Refactoring
 
-Payment processing integration
+🧱 Implement MVC architecture
 
-Email notification system
+🔄 Reduce code redundancy
 
-Mobile-friendly interface
+🚫 Improve error recovery and messaging
 
-Code Refactoring:
-
-Implement proper MVC architecture
-
-Reduce code complexity
-
-Improve error handling
-
-Author:
+👨‍💻 Author
 
 Zaid Bin Naveed
 
-Building new projects everyday
-
-Push to the branch
-
-Create a new Pull Request
+Building new projects every day with passion and purpose.
